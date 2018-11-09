@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+  {% block body_block %}
+    <h1>Welcome to Index page!</h1>
+    <a href="{% url 'basic_app:other' %}">Go to other page</a>
+  </br>
+    {{ text|cut:"Univers" }}
+  </br>
+    {{ number|add:60 }}
+  {% endblock %}
